@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "a8d65e48-3f5a-4877-bcf1-f677d35f0470",
+		"name": "API-Client",
+		"description": "Collection para testar a avaliação Banco PAN.\r\n---\r\nAvaliação para time Tecnologia Digital\r\nConceitos e Experiências – BackEnd\r\nData: 15/02/2019 – Versão 1.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": \"39150548875\",\r\n    \"name\": \"Eduardo Pereira\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-client-by-cpf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client/39150548875",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"39150548875"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cep\": \"06755260\",\r\n    \"logradouro\": \"Avenida José André de Moraes\",\r\n    \"complemento\": \"Bloco C Apto. 195\",\r\n    \"bairro\": \"Jardim Monte Alegre\",\r\n    \"localidade\": \"Taboão da Serra\",\r\n    \"uf\": \"SP\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/address/39150548875",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"address",
+						"39150548875"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-client-address-by-cep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/address/39150548875/06755260",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"address",
+						"39150548875",
+						"06755260"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-address-by-cep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/address/06755260",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"address",
+						"06755260"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-estados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/estados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-municipios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/estados/RJ/municipios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estados",
+						"RJ",
+						"municipios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-client-address",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"cep\": \"06755260\",\r\n        \"logradouro\": \"Avenida José André de Moraes\",\r\n        \"complemento\": \"Bloco C - Apto. 195\",\r\n        \"bairro\": \"Jardim Monte Alegre\",\r\n        \"localidade\": \"Taboão da Serra\",\r\n        \"uf\": \"SP\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/address/39150548875/06755260",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"address",
+						"39150548875",
+						"06755260"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
