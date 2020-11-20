@@ -3,3 +3,6 @@ Avaliação para time Tecnologia Digital Conceitos e Experiências – BackEnd D
 
 Requisitos para rodar:
 * Java 11
+
+Para realizar os testes eu criei uma collection no postman com todos os endpoints já configurados:
+* API-Client.postman_collection.json
