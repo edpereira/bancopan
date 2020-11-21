@@ -20,23 +20,23 @@ public class StateService {
     private static final String RJ = "RJ";
 
     @Autowired
-    private StateClient estadoClient;
+    private StateClient stateClient;
 
-    @Cacheable(value = "estados-ordenados")
-    public List<State> getEstados() {
-        List<State> estados = estadoClient.getEstados();
-        return orderEstados(estados);
+    @Cacheable(value = "ordered-states")
+    public List<State> getOrderedStates() {
+        List<State> states = stateClient.getStates();
+        return sortStates(states);
     }
 
-    public Object getMunicipios(String siglaEstado) {
-        List<State> estados = estadoClient.getEstados();
-        estados = estados.stream().filter(estado -> estado.getSigla().equals(siglaEstado)).collect(Collectors.toList());
-        Assert.isTrue(estados.size() == 1, "State invalid");
-        return estadoClient.getMunicipios(estados.get(0).getId());
+    public Object getCities(String siglaEstado) {
+        List<State> states = stateClient.getStates();
+        states = states.stream().filter(estado -> estado.getSigla().equals(siglaEstado)).collect(Collectors.toList());
+        Assert.isTrue(states.size() == 1, "State invalid");
+        return stateClient.getCities(states.get(0).getId());
     }
 
-    private List<State> orderEstados(List<State> estados) {
-        List<State> copy = new ArrayList<>(estados);
+    private List<State> sortStates(List<State> states) {
+        List<State> copy = new ArrayList<>(states);
         Collections.sort(copy, Comparator.comparing(State::getNome));
         List<State> response = new ArrayList<>();
         State sp = copy.remove(25);

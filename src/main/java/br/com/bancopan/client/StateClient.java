@@ -22,15 +22,15 @@ public class StateClient {
     @Value("${ibge.url}")
     private String ibgeUrl;
 
-    @Cacheable(value = "estados")
-    public List<State> getEstados() {
+    @Cacheable(value = "states")
+    public List<State> getStates() {
         ResponseEntity<State[]> response = restTemplate.getForEntity(ibgeUrl, State[].class);
         Assert.isTrue(response.getStatusCode().equals(HttpStatus.OK), "Service unavailable, try later.");
         return Arrays.stream(response.getBody()).collect(Collectors.toList());
     }
 
-    @Cacheable(value = "municipios", key = "#id")
-    public Object getMunicipios(String id) {
+    @Cacheable(value = "cities", key = "#id")
+    public Object getCities(String id) {
         String ibgeMunicipiosUrl = ibgeUrl + id + "/municipios";
         ResponseEntity<Object> response = restTemplate.getForEntity(ibgeMunicipiosUrl, Object.class);
         Assert.isTrue(response.getStatusCode().equals(HttpStatus.OK), "Service unavailable, try later.");

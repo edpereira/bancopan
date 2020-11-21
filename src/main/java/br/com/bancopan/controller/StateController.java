@@ -15,18 +15,18 @@ public class StateController {
     private StateService service;
 
     @GetMapping("/estados")
-    public ResponseEntity getEstados() {
+    public ResponseEntity getStates() {
         try {
-            return ResponseEntity.ok(service.getEstados());
+            return ResponseEntity.ok(service.getOrderedStates());
         } catch (IllegalArgumentException e) {
             return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(e.getMessage());
         }
     }
 
     @GetMapping("/estados/{siglaEstado}/municipios")
-    public ResponseEntity getMunicipios(@PathVariable String siglaEstado) {
+    public ResponseEntity getCities(@PathVariable String siglaEstado) {
         try {
-            return ResponseEntity.ok(service.getMunicipios(siglaEstado));
+            return ResponseEntity.ok(service.getCities(siglaEstado));
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
