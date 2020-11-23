@@ -1,6 +1,6 @@
-package br.com.bancopan.controller;
+package br.com.empresa.controller;
 
-import br.com.bancopan.service.StateService;
+import br.com.empresa.service.StateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

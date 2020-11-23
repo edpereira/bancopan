@@ -1,8 +1,7 @@
-package br.com.bancopan.controller;
+package br.com.empresa.controller;
 
-import br.com.bancopan.domain.Client;
-import br.com.bancopan.service.ClientService;
-import javassist.NotFoundException;
+import br.com.empresa.domain.Client;
+import br.com.empresa.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

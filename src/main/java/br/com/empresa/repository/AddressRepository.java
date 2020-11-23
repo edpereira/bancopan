@@ -1,6 +1,6 @@
-package br.com.bancopan.repository;
+package br.com.empresa.repository;
 
-import br.com.bancopan.domain.Address;
+import br.com.empresa.domain.Address;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;

@@ -1,4 +1,4 @@
-package br.com.bancopan;
+package br.com.empresa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -11,10 +11,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-@ComponentScan(basePackages={"br.com.bancopan"})
-@EnableJpaRepositories(basePackages="br.com.bancopan.repository")
+@ComponentScan(basePackages={"br.com.empresa"})
+@EnableJpaRepositories(basePackages="br.com.empresa.repository")
 @EnableTransactionManagement
-@EntityScan(basePackages="br.com.bancopan.domain")
+@EntityScan(basePackages="br.com.empresa.domain")
 @EnableCaching
 public class ClientApiApplication {
 

@@ -1,7 +1,7 @@
-package br.com.bancopan.service;
+package br.com.empresa.service;
 
-import br.com.bancopan.client.StateClient;
-import br.com.bancopan.domain.State;
+import br.com.empresa.client.StateClient;
+import br.com.empresa.domain.State;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
-package br.com.bancopan.handler;
+package br.com.empresa.handler;
 
-import br.com.bancopan.exception.BadRequestException;
+import br.com.empresa.exception.BadRequestException;
 import javassist.NotFoundException;
 import lombok.SneakyThrows;
 import org.springframework.http.HttpStatus;

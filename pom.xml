@@ -8,11 +8,11 @@
 		<version>2.4.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.bancopan</groupId>
+	<groupId>br.com.empresa</groupId>
 	<artifactId>client-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>client-api</name>
-	<description>API do Cliente Banco PAN - Avaliação para time Tecnologia Digital</description>
+	<description>API do Cliente - Avaliação para time Tecnologia Digital</description>
 
 	<properties>
 		<java.version>11</java.version>

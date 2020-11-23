@@ -1,4 +1,4 @@
-package br.com.bancopan.domain;
+package br.com.empresa.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;

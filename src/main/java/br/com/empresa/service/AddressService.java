@@ -1,10 +1,10 @@
-package br.com.bancopan.service;
+package br.com.empresa.service;
 
-import br.com.bancopan.client.CEPClient;
-import br.com.bancopan.domain.Address;
-import br.com.bancopan.domain.Client;
-import br.com.bancopan.repository.AddressRepository;
-import br.com.bancopan.repository.ClientRepository;
+import br.com.empresa.client.CEPClient;
+import br.com.empresa.domain.Address;
+import br.com.empresa.domain.Client;
+import br.com.empresa.repository.AddressRepository;
+import br.com.empresa.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;

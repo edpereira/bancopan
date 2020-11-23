@@ -1,6 +1,6 @@
-package br.com.bancopan.client;
+package br.com.empresa.client;
 
-import br.com.bancopan.domain.State;
+import br.com.empresa.domain.State;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;

@@ -1,6 +1,6 @@
-package br.com.bancopan.client;
+package br.com.empresa.client;
 
-import br.com.bancopan.domain.Address;
+import br.com.empresa.domain.Address;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;

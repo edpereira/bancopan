@@ -1,10 +1,10 @@
-package br.com.bancopan;
+package br.com.empresa;
 
-import br.com.bancopan.client.CEPClient;
-import br.com.bancopan.domain.Address;
-import br.com.bancopan.repository.AddressRepository;
-import br.com.bancopan.repository.ClientRepository;
-import br.com.bancopan.service.AddressService;
+import br.com.empresa.client.CEPClient;
+import br.com.empresa.domain.Address;
+import br.com.empresa.repository.AddressRepository;
+import br.com.empresa.repository.ClientRepository;
+import br.com.empresa.service.AddressService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

@@ -1,4 +1,4 @@
-package br.com.bancopan.domain;
+package br.com.empresa.domain;
 
 import lombok.AccessLevel;
 import lombok.Data;

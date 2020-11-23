@@ -1,8 +1,8 @@
-package br.com.bancopan;
+package br.com.empresa;
 
-import br.com.bancopan.controller.AddressController;
-import br.com.bancopan.domain.Address;
-import br.com.bancopan.service.AddressService;
+import br.com.empresa.controller.AddressController;
+import br.com.empresa.domain.Address;
+import br.com.empresa.service.AddressService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

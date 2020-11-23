@@ -1,6 +1,6 @@
-package br.com.bancopan.config;
+package br.com.empresa.config;
 
-import br.com.bancopan.handler.RestTemplateResponseErrorHandler;
+import br.com.empresa.handler.RestTemplateResponseErrorHandler;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

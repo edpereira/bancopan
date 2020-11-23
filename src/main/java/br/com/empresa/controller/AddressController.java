@@ -1,7 +1,7 @@
-package br.com.bancopan.controller;
+package br.com.empresa.controller;
 
-import br.com.bancopan.domain.Address;
-import br.com.bancopan.service.AddressService;
+import br.com.empresa.domain.Address;
+import br.com.empresa.service.AddressService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
